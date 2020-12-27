@@ -1,0 +1,41 @@
+name: PrisonNet
+version: 0.0.1
+main: net.prison.net.Main
+author: Bahzinga
+description: A classic gamemode reimagined, call it Prison 2.0!
+
+commands:
+  prison:
+    permission: prison.admin
+    description: Manage your prison server!
+  pickaxes:
+    permission: prison.pickaxes
+    aliases: pickaxe
+    description: Upgrade your pickaxe!
+  ranks:
+    permission: prison.ranks
+    aliases: rank
+    description: View all ranks on the server!
+  rankup:
+    permission: prison.rankup
+    description: Do you have what it takes to rankup?
+  mine:
+    permission: prison.mine
+    aliases: mines
+    description: Manage your mine!
+  blocks:
+    permission: prison.blocks
+    aliases: block
+    description: Find out how many blocks you've broken!
+  prestige:
+    permission: prison.prestige
+    aliases: prestiges
+    description: Now you've acehieved the highest rank, are you ready for the real challenge?
+  contraband:
+    permission: prison.contraband
+    aliases: loot
+    description: Claim your contraband!
+  enchant:
+    permission: prison.contraband
+    aliases: prisonenchant
+    description: Enchant items.
