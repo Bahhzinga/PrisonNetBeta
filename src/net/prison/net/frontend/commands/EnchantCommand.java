@@ -36,7 +36,6 @@ public class EnchantCommand implements CommandExecutor {
 
                         Enchantment ench = Enchantment.getByKey(new NamespacedKey(plugin, args[0]));
 
-
                         // Get the itemstack
                         ItemStack item = player.getInventory().getItemInMainHand();
 
@@ -44,10 +43,7 @@ public class EnchantCommand implements CommandExecutor {
                         item.addEnchantment(Enchantment.getByKey(new NamespacedKey(plugin, args[0])), Integer.valueOf(args[1]));
                         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7Added &c" + args[0] + " &7level " + args[1] + " &7to your item."));
 
-                        // Update the itemstack
-                        ItemMeta meta = item.getItemMeta();
-                        meta.setLore(Arrays.asList(ChatColor.translateAlternateColorCodes('&', "&7" + args[0] + " " + args[1])));
-                        item.setItemMeta(meta);
+
 
 
 
